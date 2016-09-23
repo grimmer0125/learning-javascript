@@ -1,8 +1,9 @@
 ### http response: Server routing & API/Restful endpoint
 
-Server回http response時粗略來分有兩種. 一種是resource type (html, css, images), 另一種是 API/Restful type, e.g.`{name:"apple"}`.
+Server回http response時粗略來分有兩種:
 
-Resource type跟Routing是相關聯的.
+1. Routing/Resource type (html, css, images), 
+2. Restful/API type, e.g.`{name:"apple"}`.
 
 **Routing:**
 ~~~

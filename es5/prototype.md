@@ -1,4 +1,4 @@
-## ES5中的物件, prototype, method
+## ES5的自訂物件類型及其method - 使用 prototype
 
 ### 非自建物件類型的, 即`var obj ={};`, 可參考上面Object Literal Notation章節
 
