@@ -24,10 +24,22 @@ function Person (){
 
 jQuery的library應該主要部份是純function, 部份是static method. e.g. `$('.jQueryButton')` 跟 `$.get()`
 
-### Function的Prototype
+### Function的Prototype [進階]
 
-參考: [https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype)
+參考: 
 
-為ES5時期, 發明出來用來做類似其他語言裡所謂**物件**可以做到的事, 部份功能可被 ES6的真正的`class`取代.
+1. Function.prototype
+[https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype)
+2. Inheritance and the prototype chain 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
 
-待補充.
+example:
+~~~ javascript
+var o = { a: {name:"k1"}, m: function(b){ return this.a + 1; }};
+
+var p = Object.create(o);// p is an object that inherits from o
+
+p.a.name ="k2";console.log("p.a:", p.a); // { name: 'k2' } console.log("o.a:", p.a); // { name: 'k2' } !!!!
+
+~~~
+
