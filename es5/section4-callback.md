@@ -1,5 +1,7 @@
 ## Callback function
 
+**下一個章節有一些進階的callback的例子**
+
 在各種程式語言裡, callback function是很重要的概念. 應為各式各樣的 **API(e.g.jQuery)** 或`EventListener` 的基礎
 
 通常可分為兩種角色
