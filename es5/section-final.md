@@ -9,3 +9,4 @@
 7. 多了 `===` 這個operator
 8. 沒有`private`關鍵字
 9. JavaScript沒有`C` type的pointer跟`C#/Java` 其reference的id.
+10. Prototype的概念. [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
