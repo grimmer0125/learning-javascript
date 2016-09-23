@@ -4,7 +4,7 @@
 
 ### ES5, 自建物件類型的method宣告方式 以及static method/data:
 
-物件的member成員若是function, 通常叫做method
+物件的member成員若是function, 通常叫做method.
 
 **非static method:**
 1. `Person.prototype.sayHello = function()`
