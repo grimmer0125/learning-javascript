@@ -7,7 +7,8 @@
     * [進階-closure, module, timer](es5/advanced.md)
     * [其他-web worker, anonymous function](es5/others.md)
 * [實際應用](application/README.md)
-    * [HTTP request & response](application/http.md)
+    * [Server - HTTP request & response](application/http.md)
+    * [Client - 用Fetch跟Server要資料](application/fetch.md)
 * [JavaScript ES6 教學](es6/README.md)
     * [箭頭函數Arrow Function](es6/arrow_function.md)
 
