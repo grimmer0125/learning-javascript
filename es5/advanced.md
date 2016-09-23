@@ -1,10 +1,20 @@
+### self invoke function (定義跟執行同時)
+
+常用來跟 module pattern搭配.
+
+~~~ javascript
+(function () {
+  var x = "Hello!!"; // I will invoke myself
+})();
+~~~
+
 ### 何謂module
 
 ES5 (ECMAScript 5) 時，JavaScript本身並沒有內建module的概念. module一般可視做Function及資料(object)的集合.
 
 third-party的各種module實作可參考下面 **大型前端專案的架構**的介紹. module實作常見方式:
 
-1. 基本上用Object Literal Notation `var obj={}`就可以達到module化，包含member function, member property. 
+1. 基本上用Object Literal Notation `var obj={}`就可以達到module化，包含member function, member property.
 2. 但是若想要使用/模擬private data/function, 則需要透過closure來達到.
 
 #### 如何export module
@@ -25,12 +35,12 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures*A closure is a 
 上述link裡的example, 放在online JB Bin上:[http://jsbin.com/wurihum/edit?html,js,output](http://jsbin.com/wurihum/edit?html,js,output) 其code:
 
 ~~~ javascript
-var add = (function () { 
-  var counter = 0; 
+var add = (function () {
+  var counter = 0;
   debugger;  
-  return function () { 
-    counter = counter +1; 
-    debugger; //用chrome dev tool看, 會看到closure scope 
+  return function () {
+    counter = counter +1;
+    debugger; //用chrome dev tool看, 會看到closure scope
     return counter;  
   };
 })();
@@ -63,9 +73,9 @@ setTimeout(function(){ console.log("timeout"); }, 3000);
 ### timer的用法跟陷阱
 ~~~ javascript
 // closure problem
-for(var i=0; i<10;i++){ 
-  setInterval(function(){ 
-    console.log(i); // 10, 10, ...., 10 !!! 
+for(var i=0; i<10;i++){
+  setInterval(function(){
+    console.log(i); // 10, 10, ...., 10 !!!
   }, 5000);
 }
 

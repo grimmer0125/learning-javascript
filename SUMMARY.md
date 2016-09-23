@@ -2,8 +2,13 @@
 
 * [Introduction](README.md)
 * [JavaScript ES5 教學](es5/README.md)
-    * [基本語法說明](es5/basic.md)
+    * [工具準備](es5/section1.md)
+    * [JavaScript 基本特性, 變數](es5/section2.md)
+    * [Array及JSON的操作](es5/section3.md)
+    * [Callback function](es5/section4-callback.md)
+    * [Function, Object, Scope, this](es5/section5.md)
     * [ES5中的自訂物件類型-prototype](es5/prototype.md)
+    * [JavaScript重點以及跟其他語言差異處](es5/section-final.md)    
     * [進階-closure, module, timer](es5/advanced.md)
     * [其他-web worker, anonymous function](es5/others.md)
 * [實際應用](application/README.md)
@@ -11,4 +16,3 @@
     * [Client - 用Fetch跟Server要資料](application/fetch.md)
 * [JavaScript ES6 教學](es6/README.md)
     * [箭頭函數Arrow Function](es6/arrow_function.md)
-
