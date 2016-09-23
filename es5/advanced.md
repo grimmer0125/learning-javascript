@@ -2,7 +2,10 @@
 
 ES5 (ECMAScript 5) 時，JavaScript本身並沒有內建module的概念. module一般可視做Function及資料(object)的集合.
 
-third-party的module可參考下面 *大型前端專案的架構. module化常見方式1. 基本上用Object Literal Notation `var obj={}`就可以達到module化，包含member function, member property. 2. 但是若想要使用/模擬private data/function, 則需要透過closure來達到.
+third-party的各種module實作可參考下面 **大型前端專案的架構**的介紹. module實作常見方式:
+
+1. 基本上用Object Literal Notation `var obj={}`就可以達到module化，包含member function, member property. 
+2. 但是若想要使用/模擬private data/function, 則需要透過closure來達到.
 
 #### 如何export module
 待補充
@@ -15,13 +18,29 @@ third-party的module可參考下面 *大型前端專案的架構. module化常�
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures*A closure is a function having access to the parent scope, even after the parent function has closed.*
 
-上述link有提到跟 closure相關的 **lexical scoping***the code and see that this works. This is an example of lexical scoping: in JavaScript, the scope of a variable is defined by its location within the source code (it is apparent lexically) and nested functions have access to variables declared in their outer scope.*
+上述link有提到跟 closure相關的 **lexical scoping**:  
 
-上述link裡的example, 放在online JB Bin上:[http://jsbin.com/wurihum/edit?html,js,output](http://jsbin.com/wurihum/edit?html,js,output)
+*the code and see that this works. This is an example of lexical scoping: in JavaScript, the scope of a variable is defined by its location within the source code (it is apparent lexically) and nested functions have access to variables declared in their outer scope.*
 
-~~~ javascriptvar add = (function () { var counter = 0; debugger;  return function () { counter = counter +1; debugger; //用chrome dev tool看是看到closure scope return counter;  };})();
+上述link裡的example, 放在online JB Bin上:[http://jsbin.com/wurihum/edit?html,js,output](http://jsbin.com/wurihum/edit?html,js,output) 其code:
 
-add();debugger;add();debugger;add();~~~
+~~~ javascript
+var add = (function () { 
+  var counter = 0; 
+  debugger;  
+  return function () { 
+    counter = counter +1; 
+    debugger; //用chrome dev tool看, 會看到closure scope 
+    return counter;  
+  };
+})();
+
+add();
+debugger;
+add();
+debugger;
+add();
+~~~
 
 ### module pattern (通常是使用到匿名function)
 
@@ -37,27 +56,47 @@ p.s.套用closure在module pattern上時, 過程都會返回一個使用`{}`Obje
 待補充
 
 ### timeout
-~~~ javascriptsetTimeout(function(){ console.log("timeout"); }, 3000);~~~
+~~~ javascript
+setTimeout(function(){ console.log("timeout"); }, 3000);
+~~~
 
 ### timer的用法跟陷阱
-~~~ javascript// closure problemfor(var i=0; i<10;i++){ setInterval(function(){ console.log(i); // 10, 10, ...., 10 !!! }, 5000);}
+~~~ javascript
+// closure problem
+for(var i=0; i<10;i++){ 
+  setInterval(function(){ 
+    console.log(i); // 10, 10, ...., 10 !!! 
+  }, 5000);
+}
 
-How to fix it?~~~
+How to fix it ??
+1. use ES6的blocked scope keywoard, let
+2. use another function to forcely pass by value (i)
+~~~
 
 ### web worker:
 [https://developer.mozilla.org/zh-TW/docs/Web/API/Web_Workers_API/Using_web_workers](https://developer.mozilla.org/zh-TW/docs/Web/API/Web_Workers_API/Using_web_workers)
 
 ### 匿名函數的變數提升 (var hoisting)
 
-~~~ javascript (function(){ console.log(a); // ouput -> undefined
+~~~ javascript 
+(function(){ 
+  console.log(a); // ouput -> undefined
 
- var a = 100; console.log(a); // 100
+  var a = 100; 
+  console.log(a); // 100
 
-})();~~~
+})();
+~~~
 [http://kuro.tw/posts/2015/07/08/note-javascript-variables-declared-with-the-scope-scope/](http://kuro.tw/posts/2015/07/08/note-javascript-variables-declared-with-the-scope-scope/)
 
 因為在匿名函數獨立的 scope 內，不管 var 是放在最前面，或是最後一行，他的變數實體在該 code block 一開始就是新的了，也就是說，剛剛的 code 其實等同下面這段
 
-~~~ javascript(function(){ var a; console.log(a); // undefined a = 100; console.log(a); // 100})();~~~
-
-
+~~~ javascript
+(function(){ 
+  var a; 
+  console.log(a);   // undefined 
+  a = 100; 
+  console.log(a); // 100
+})();
+~~~
