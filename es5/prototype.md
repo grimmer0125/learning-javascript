@@ -25,7 +25,7 @@
 
 jQuery的library應該主要部份是純function, 部份是static method. e.g. `$('.jQueryButton')` 跟 `$.get()`
 
-### Function的Prototype [進階]
+### JavaScript的 Prototype [進階]
 
 參考:
 
