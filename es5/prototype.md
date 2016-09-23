@@ -1,6 +1,6 @@
 ## ES5的自訂物件類型及其method - 使用 prototype
 
-#### 非自建物件類型的, 即`var obj ={};`, 可參考上一個章節的Object Literal Notation
+### 非自建物件類型的, 即`var obj ={};`, 可參考上一個章節的Object Literal Notation
 
 ### ES5, 自建物件類型的method宣告方式 以及static method/data:
 
