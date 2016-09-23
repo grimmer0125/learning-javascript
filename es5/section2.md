@@ -37,7 +37,7 @@
 
 ### 變數的copy, 以及 Call by value vs Call by reference
 
-變數基本上有兩種. 一種是純值的value type, 一種是object/function的reference.
+變數基本上有兩種. 一種是純值的value type, 一種是object/function的reference.(事實上function本質上也是個物件[https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function))
 
 一個function傳進去的變數叫做argument, function宣告及在內部使用的叫做parameter, 例子: [http://stackoverflow.com/questions/1788923/parameter-vs-argument](http://stackoverflow.com/questions/1788923/parameter-vs-argument).
 
