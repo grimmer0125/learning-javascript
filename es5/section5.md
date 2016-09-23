@@ -112,13 +112,30 @@ if(true){
 console.log("x:",x); //x:3
 ~~~
 
-### JavaScript Objects的建立
+### JavaScript Object的建立
 
 有以下3方法, 參考[http://www.w3schools.com/js/js_object_definition.asp](http://www.w3schools.com/js/js_object_definition.asp)
 
-1. Object Literal Notation. `var car = {name:"BMW", autoDrive:function(){}};`. 較難重複製造並使用建立的屬性, 常用來用在屬性欄位不固定的case.
-2. 自建物件type(有自己的名字). 使用`new` keyword. Define `function Car(this.name="", this.setName=function{}){};`, 接著使用`var car1 = new Car();`方便重複使用. 較為接近一般語言裡的物件化的方法.
-3. `var person = new Object(); person.firstName = "John";`較難重複製造並使用建立的屬性
+1. Object Literal Notation. 
+~~~ javascript
+var car = {name:"BMW", autoDrive:function(){}};.
+~~~ 
+較難重複製造並使用建立的屬性, 常用來用在屬性欄位不固定的case.
+2. 自建物件類型(type, 有自己的名字). 使用`new` keyword. 
+~~~ javascript
+    function Car(){
+      this.name=""; 
+      this.setName=function(){
+      };
+    }
+~~~
+接著使用`var car1 = new Car();`方便重複使用. 較為接近一般語言裡的物件化的方法.
+
+3. 這方法較少用, 較難重複製造並使用建立的屬性.
+
+~~~ javascript
+var person = new Object(); person.firstName = "John";
+~~~
 
 ### JavaScript的Object Literal Notation
 
