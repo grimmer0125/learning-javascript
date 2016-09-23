@@ -9,4 +9,6 @@ ES6 如何在class上模擬private data/method:
 1. [http://www.2ality.com/2016/01/private-data-classes.html](http://www.2ality.com/2016/01/private-data-classes.html)
 2. [http://stackoverflow.com/questions/27849064/how-to-implement-private-method-in-es6-class-with-traceur](http://stackoverflow.com/questions/27849064/how-to-implement-private-method-in-es6-class-with-traceur)
 
-上述兩個link都提到兩種方式WeakMap & Symbol
+上述兩個link都提到兩種方式WeakMap & Symbol.
+
+## 其餘部份待補充
