@@ -10,13 +10,14 @@
 1. `Person.prototype.sayHello = function()`
 2. in constructor:  
 ~~~ javascript
-function Person (){  
-  this.someData = 0;  
-  this.testFun = function{  
-  //can use this.someData to access
-  }
-}
+    function Person (){  
+      this.someData = 0;  
+      this.testFun = function{  
+        //can use this.someData to access
+      }
+    }
 ~~~
+
 **static method:**
 `MyClass.method1 = function ()`. It has no relationship with an object instance of that constructor function [http://ithelp.ithome.com.tw/question/10128721](http://ithelp.ithome.com.tw/question/10128721)
 
