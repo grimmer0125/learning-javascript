@@ -21,8 +21,9 @@ JavaScript exception常見case:使用到未宣告的物件
 
 其他語言有的有兩種, 三種, JavaScript只有Exception
 
-* Exception可以try-catch
-* 可以自己製造Exception, 事先做一個如果真的發生時的提醒, 來debug.
+* Exception可以try-catch, 參考[http://www.w3schools.com/js/js_errors.asp](http://www.w3schools.com/js/js_errors.asp) 
+
+* 可以自己製造Exception, 事先做一個如果真的發生時的提醒, 來debug.(上面link有提到)
 * 通常發生Exception如果沒有catch住，程式也會掛掉，不過Browser如果是在本地端發生exception (比如說按一個button執行JavaScropt code時，下一次按button還是會去執行那段code.
 
 ### 記憶體管理
