@@ -1,6 +1,6 @@
 ## JavaScript裡的Function的基本介紹
 
-**與Function相關的object, scope, this 會在[Object, Scope, this](es5/this.md)** 裡詳細介紹
+**與Function相關的new object, scope, this 會在[Object, Scope, this](es5/this.md)** 裡詳細介紹
 
 可參考 JavaScript Function Definitions [http://www.w3schools.com/js/js_function_definition.asp](http://www.w3schools.com/js/js_function_definition.asp)
 

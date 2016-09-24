@@ -1,4 +1,4 @@
-## Function, Object, Scope, this  
+## Object, Scope, this  
 
 ### Scope (變數存活的地方)
 * 有三種. Global, Local (Function裡), Closure.
@@ -45,7 +45,7 @@ console.log("x:",x); //x:3
 var car = {name:"BMW", autoDrive:function(){}};.
 ~~~
 較難重複製造並使用建立的屬性, 常用來用在屬性欄位不固定的case.
-2. 自建物件類型(type, 有自己的名字). 使用`new` keyword.
+2. 使用**自定Function**來自建物件類型(type, 有自己的名字). 使用`new` keyword.
 ~~~ javascript
     function Car(){
       this.name="";
@@ -99,6 +99,7 @@ myModule.myMethod();
 Node.js 一般使用時 (node index.js)，檔案的最外層並不是global scope(意指會利用function將code整個包起來執行). 在最外層下一開始`this={}`, 要access global要用`global`這個關鍵字當做keyword來存取global物件，但一進去任何function裡，它的this就會變成指到global了。
 
 **this的重點:**
+
 1. `this`是指到現在這位置的(物件)owner. Local scope下都有個`this`來指向某物件.
 2. 當產生物件時, 即`new` or `.` or 'var car ={}', 在進去其functions時, `this`會切換成物件的參考reference.
 3. 當直接呼叫function時(沒有使用. or new or ={} or bin/call/apply時)，`this`都是指向global scope的唯一物件(browser:window, node.js:global)
