@@ -47,7 +47,7 @@ function f(){
 ~~~
 
 重點Notes:
-1. `someobject.[[Prototype]]`` 等價於 物件的`__proto__`(deprecated). 但`someobject.[[Prototype]]``跟`Function物件裡的.prototype`不一樣. 見上面**Inheritance and the prototype chain**的說明. 
+1. `someobject.[[Prototype]]`` 等價於 物件的`__proto__`(deprecated). 但`someobject.[[Prototype]]``跟`Function物件裡的.prototype`不一樣. 見上面**Inheritance and the prototype chain**的說明.
 3. 不管是property或是method, access時若果當前type沒有找到此property/method, 都會往它的prototype指到的物件去找，遞迴的一直找到為止/或找到Object都沒有
 4. 為什麼常見自訂object type的method要用`Car.prototype.autopilot`此寫法，是因為在new Car()時, 它會copy這個Car(<-一function object)的prototype到新建的prototype property.
 5. 第4點補充: `var g = new Graph();` **`g.[[Prototype]]` is the value of `Graph.prototype` when new Graph() is executed.**
@@ -94,7 +94,6 @@ function Car(name,year, model){
 }
 
  // Auto.prototype(給new物件時用)跟Auto自己的prototype property(__proto__)不一樣.
- // 物件的
  // 且這兩個在這case裡都跟this.year, this.name沒關係.  
 Car.prototype = Object.create(Auto.prototype);
 ~~~
