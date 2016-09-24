@@ -12,11 +12,12 @@
 
 ### Exception & Crash & Assert
 
-常見case1: `test_array`大小是`2`, 但access到超出範圍, e.g. `test_array[100]`, 通常會發生Exception/Crash
+其他語言會crash但JavaScript不會的case:
 
-常見case2:使用到未宣告的物件
+1. `var test_array=[1,2]`, 其大小是`2`, 但access到超出範圍, e.g. `var k = test_array[100]`. 
+2. 除以`0`
 
-常見case3:除以`0`
+JavaScript exception常見case:使用到未宣告的物件
 
 其他語言有的有兩種, 三種, JavaScript只有Exception
 
