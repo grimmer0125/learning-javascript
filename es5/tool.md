@@ -6,7 +6,7 @@
     1. console.log("error:", json); 
     2. console.log("msg:"+"string"); 
     3. console.log("err:%s", message), 
-    4. console.error(on chrome/node.js).
+    4. console.error(err) //on chrome/node.js.
 * 可以安裝 [https://code.visualstudio.com/](https://code.visualstudio.com/)方便用Node.js設定中斷點debug.
 * 在browser的環境下，也可以用 [Window alert](http://www.w3schools.com/jsref/met_win_alert.asp)來直接跳出警告訊息來debug.
 
