@@ -26,7 +26,7 @@ third-party的各種module實作可參考下面 **大型前端專案的架構**�
 
 **closure使用到的變數的lifetime**只要還有人指到這個closure function時，這些變數就會隨著存活.
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures*A closure is a function having access to the parent scope, even after the parent function has closed.*
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures *A closure is a function having access to the parent scope, even after the parent function has closed.*
 
 上述link有提到跟 closure相關的 **lexical scoping**:  
 

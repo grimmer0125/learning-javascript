@@ -1,3 +1,9 @@
+## strict mode
+
+[https://msdn.microsoft.com/zh-tw/library/br230269(v=vs.85).aspx](https://msdn.microsoft.com/zh-tw/library/br230269(v=vs.85).aspx)
+
+*檢查程式碼錯誤時，使用 strict 模式可獲得較佳的效果。例如，當您使用 strict 模式時，就不能使用隱含宣告的變數或將值指派給唯讀屬性，也不能為無法擴充的物件添加屬性。本主題稍後的程式碼在 strict 模式下的限制一節中會列出這些限制。如需 strict 模式的詳細資訊，請參閱 ECMAScript 語言規格，第 5 版。*
+
 ### web worker:
 
 [https://developer.mozilla.org/zh-TW/docs/Web/API/Web_Workers_API/Using_web_workers](https://developer.mozilla.org/zh-TW/docs/Web/API/Web_Workers_API/Using_web_workers)

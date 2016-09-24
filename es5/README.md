@@ -1,9 +1,9 @@
 # JavaScript ES5 語法說明
 
-## ES5 = ECMAScript 5
+## ES5 = ECMAScript 5, 第一個5.x版在2009年12月推出.
 
 JavaScript最新正式版為2015年推出的 ES6, 其中包含了諸多的新功能, 比如說
-1. `class` 
+1. `class`
 2. block level的scope變數 `let`, `const`等.
 3. 其他
 
