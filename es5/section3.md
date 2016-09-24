@@ -21,6 +21,16 @@ first.name = "abc";
 console.log(array); // [{name:"abc"}, "map", "mop"]; change
 ~~~
 
+#### 移除第一個元素以及最後一個元素
+
+~~~ javascript
+// remove the fist one, using shift
+var fruits = ["Banana", "Orange", "Apple", "Mango"];fruits.shift(); //the length becomes 3
+
+// remove the final one, using pop
+fruits.pop(); //the length becomes 2
+~~~
+
 #### Array的copy (array本身是reference type)
 
 array2等於array1, 透過array2改, 印出array1也被改到
@@ -55,7 +65,7 @@ newArray[0].name = "google"; //第一個element為物件類型.
 
 ~~~
 
-`slice()`另一用途: 用來取某一部份的array的值, e.g. `slice(1,3)`, 從1取到2.
+**`slice()`另一用途: 用來取某一部份的array的值, e.g. `slice(1,3)`, 從1取到2.**
 
 #### Array的 For-Loop
 有兩種
