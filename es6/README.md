@@ -17,4 +17,18 @@ ES6 如何在class上模擬private data/method:
 
 Since ECMAScript 6, the [[Prototype]] is accessed using the accessors Object.getPrototypeOf() and Object.setPrototypeOf().
 
+### let , const 為 block level 變數的關鍵字
+
+~~~ javascript
+if(true){
+  var x = 1;
+}
+console.log(x); //1
+
+if(true){
+  let y = 2; //its lifetime is only in thie scope     
+}
+console.log(y); //exception, undefined
+~~~
+
 ## 其餘部份待補充
