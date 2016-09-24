@@ -28,6 +28,15 @@
 
 自動回收. 沒有人指到這物件就會被回收掉.
 
+### JavaScript 裡的變數自動轉型
+
+[https://msdn.microsoft.com/zh-tw/library/67defydd(v=vs.94).aspx](https://msdn.microsoft.com/zh-tw/library/67defydd(v=vs.94).aspx)
+
+~在 JavaScript 中，您可以針對不同型別的值執行運算，而不會發生例外狀況。  JavaScript 解譯器會將其中一種資料型別隱含轉換 (或「強制型轉」(Coerce)) 成其他資料型別，然後再執行運算。  字串、數字和布林值的強制型轉規則如下：  
+如果您合併使用數字和字串，數字會強制型轉為字串。
+如果您合併使用布林值和字串，布林值會強制型轉為字串。
+如果您合併使用數字和布林值，布林值會強制型轉為數字。~
+
 ### 變數的宣告跟定義
 
 1. 其他語言function有時也有分宣告declaration 跟定義definition, 但JS主要是變數比較有在分.
