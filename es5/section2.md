@@ -2,7 +2,7 @@
 
 ### 直譯式語言的特性
 * 沒先編譯. 一行一行逐行執行.
-* 逐行直行時的特例: Function Hoisting, 參考[JavaScript Function Definitions](http://www.w3schools.com/js/js_function_definition.asp)
+* 逐行直行時的特例: Function Hoisting, Function Declartion會被提升到當前scope的最頂端. 參考[JavaScript Function Definitions](http://www.w3schools.com/js/js_function_definition.asp)
 
 ### 除法
 
