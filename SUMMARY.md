@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [JavaScript ES5 教學](es5/README.md)
     * [工具準備](es5/tool.md)
-    * [流程控制](es5/control)
+    * [流程控制](es5/control.md)
     * [JavaScript 基本特性, 變數](es5/variable.md)
     * [Array及JSON的操作](es5/array-json.md)
     * [Callback function](es5/callback.md)
