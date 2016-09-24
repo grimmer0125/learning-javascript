@@ -60,21 +60,29 @@ The function left is actually an **anonymous function** (a function without a na
 
 #### JavaScript中的Function definition: expression, declaration
 
+可參考: http://blogger.gtwang.org/2014/04/defining-javascript-functions.html
+
 Expressoin:
 ~~~ javascript
 var x = function(){
-
 }
 ~~~
 
 Declaration:
 ~~~ javascript
 function test(){
-
 }
 ~~~
 
-詳細的差別: http://blogger.gtwang.org/2014/04/defining-javascript-functions.html
+Notes:
+
+1. 如果是使用Exression的方式在loop裡, 會產生多次的Function Object. 
+2. Exression的使用要看當時的使用情境, 不過若使用則建議不採用匿名方式來幫助debug. [http://programmers.stackexchange.com/questions/160732/function-declaration-as-var-instead-of-function](http://programmers.stackexchange.com/questions/160732/function-declaration-as-var-instead-of-function), 即
+
+~~~ javascript
+var x = MY_function() {}; 
+~~~
+
 
 ### Scope (變數存活的地方)
 * 有三種. Global, Local (Function裡), Closure.
