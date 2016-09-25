@@ -51,4 +51,28 @@ var obj = {
 };
 ~~~
 
-## 其餘部份待補充
+## 其餘部份待補充, 可先參考
+[https://github.com/lukehoban/es6features](https://github.com/lukehoban/es6features)
+
+上面網站裡的功能清單 *ES6 includes the following new features*:
+- [arrows](https://github.com/lukehoban/es6features/blob/master/README.md##arrows) 
+- [classes](https://github.com/lukehoban/es6features/blob/master/README.md##classes)
+- [enhanced object literals](https://github.com/lukehoban/es6features/blob/master/README.md##enhanced-object-literals)
+- [template strings](https://github.com/lukehoban/es6features/blob/master/README.md##template-strings)
+- [destructuring](https://github.com/lukehoban/es6features/blob/master/README.md##destructuring)
+- [default + rest + spread](https://github.com/lukehoban/es6features/blob/master/README.md##default--rest--spread) 
+- [let + const](https://github.com/lukehoban/es6features/blob/master/README.md##let--const)
+- [iterators + for..of](https://github.com/lukehoban/es6features/blob/master/README.md##iterators--forof)
+- [generators](https://github.com/lukehoban/es6features/blob/master/README.md##generators)
+- [unicode](https://github.com/lukehoban/es6features/blob/master/README.md##unicode)
+- [modules](https://github.com/lukehoban/es6features/blob/master/README.md##modules)
+- [module loaders](https://github.com/lukehoban/es6features/blob/master/README.md##module-loaders)
+- [map + set + weakmap + weakset](https://github.com/lukehoban/es6features/blob/master/README.md##map--set--weakmap--weakset)
+- [proxies](https://github.com/lukehoban/es6features/blob/master/README.md##proxies)
+- [symbols](https://github.com/lukehoban/es6features/blob/master/README.md##symbols)
+- [subclassable built-ins](https://github.com/lukehoban/es6features/blob/master/README.md##subclassable-built-ins)
+- [promises](https://github.com/lukehoban/es6features/blob/master/README.md##promises)
+- [math + number + string + array + object APIs](https://github.com/lukehoban/es6features/blob/master/README.md##math--number--string--array--object-apis)
+- [binary and octal literals](https://github.com/lukehoban/es6features/blob/master/README.md##binary-and-octal-literals)
+- [reflect api](https://github.com/lukehoban/es6features/blob/master/README.md##reflect-api)
+- [tail calls](https://github.com/lukehoban/es6features/blob/master/README.md##tail-calls)
