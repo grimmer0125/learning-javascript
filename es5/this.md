@@ -6,11 +6,16 @@
 * 可開Chrome Dev tool 看變數的種類.
 
 ### Scope 對於變數的存取限制
-在任何語言裡, 不同scope裡的變數若有名字一樣，則是以當前scope的最小scope裡的變數來使用. 外面層無法access到裡面的scope. 此事對於內部function的宣告以一樣.
+1. 在任何語言裡, 不同scope裡的變數若有名字一樣，則是以當前scope的最小scope裡的變數來使用. 外面層無法access到裡面的scope. 此事對於內部function的宣告以一樣.
+2. 反過來說, 在任何function裡面，都可以存取其上面層的scope(function)的變數. 
+`In fact, in JavaScript, all functions have access to the scope "above" them.`[http://www.w3schools.com/js/js_function_closures.asp](http://www.w3schools.com/js/js_function_closures.asp)
+
 
 ~~~ javascript
+var z = 15;
 var y= 3;
 function test1(){
+  console.log(z); //15
   var y = 100;
   console.log("y:",y); //100  
   var x =5;  
@@ -22,8 +27,6 @@ test1();
 console.log(x); // exception
 test2(); //exception too
 ~~~
-
-反而過, `In fact, in JavaScript, all functions have access to the scope "above" them.`[http://www.w3schools.com/js/js_function_closures.asp](http://www.w3schools.com/js/js_function_closures.asp)
 
 ### Functional Scope (即Local scope) 的注意事項-1
 ~~~ javascript
