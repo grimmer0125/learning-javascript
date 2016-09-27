@@ -5,7 +5,7 @@
 JavaScript的Array是non typed的，即每個成員可以type不一樣，跟Object一樣.
 
 ~~~ javascript
-var list = [1,"2", [1,2,3]]
+var list = [1,"2", [1,2,3]];
 ~~~
 
 ### Array裡的單一元素操作, 其取出copy到另一變數時遵照一般的規則
