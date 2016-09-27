@@ -25,7 +25,8 @@ console.log(array); // [{name:"abc"}, "map", "mop"]; change
 
 ~~~ javascript
 // remove the fist one, using shift
-var fruits = ["Banana", "Orange", "Apple", "Mango"];fruits.shift(); //the length becomes 3
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift(); //the length becomes 3
 
 // remove the final one, using pop
 fruits.pop(); //the length becomes 2
@@ -54,7 +55,7 @@ var newArray = oldArray.slice();
 newArray[1]="123"; // "mip", "123", "mop"
 //oldArray keeps the same, "mip", "map", "mop"
 
-case 2, element有JSON object, 即結合Array跟JSON的複合型態, 新的array可以改到舊的array的key/value嗎? yes.
+// case 2, element有JSON object, 即結合Array跟JSON的複合型態, 新的array可以改到舊的array的key/value嗎? yes.
 
 var oldArray = [{name:"apple"}, "map", "mop"];
 var newArray = oldArray.slice();
