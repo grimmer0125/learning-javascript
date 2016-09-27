@@ -70,6 +70,7 @@ newArray[0].name = "google"; //第一個element為物件類型.
 
 #### Array的 For-Loop
 有兩種
+
 1. Iterator, e.g. `for student of students`
 2. `for (var i=0; i< 100; i++)`
 
