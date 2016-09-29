@@ -1,10 +1,10 @@
 ### 閉包closure (特化的function跟scope)
 
-**其他語言也有Closure**
+**其他語言也有closure**
 
 **可提供類似其他語言的static function-使用static data, 以及跟module pattern結合提供內部private function的空間**
 
-**closure使用到的變數的lifetime**只要還有人指到這個closure function時，這些變數就會隨著存活.
+**Closure使用到的變數的lifetime**只要還有人指到這個closure function時，這些變數就會隨著存活.
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures *A closure is a function having access to the parent scope, even after the parent function has closed.*
 
