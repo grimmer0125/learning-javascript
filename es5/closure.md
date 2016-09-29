@@ -1,4 +1,6 @@
-### closure (特化的function跟scope)
+### 閉包closure (特化的function跟scope)
+
+**其他語言也有Closure**
 
 **可提供類似其他語言的static function-使用static data, 以及跟module pattern結合提供內部private function的空間**
 
