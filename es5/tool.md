@@ -1,6 +1,31 @@
 ## 工具準備
 
-### Debugger工具
+JavaScript主要有分為幾個平台/執行環境
+1. 瀏覽器Client端
+2. [Node.js](https://nodejs.org/), 主要是在單機的電腦上開發Server用. 
+
+兩個環境都支援共同的JavaScript ES5 語法，而在ES6上的支援度則各異，且各平台及各版本(e.g. 不同瀏覽器, 新舊版瀏覽器, 不同版本的Node.js)的專屬API及語法內建的標準API或有異同。
+
+### 瀏覽器端直接線上測試JavaScript code的方法
+
+1. Chrome的console(有部份自動完成), 多行輸入:`shift+enter`. ref: [https://coderwall.com/p/bv0k0q/enter-multiple-lines-in-chrome-js-console](https://coderwall.com/p/bv0k0q/enter-multiple-lines-in-chrome-js-console)
+
+2. 其他網站提供的, 單人方便練習html+js+css的工具, 無法多人同時edit, 但都可選es6, 且引入外部lib: e.g. [https://jsbin.com](https://jsbin.com)<-有自動完成 or [http://codepen.io/](http://codepen.io/)
+
+### 常見的測試及開發工具
+1. [Atom](https://atom.io/), 可開發多種語言, 如果是JavaScript則需要額外安裝一些套件Packages來以利開發.   
+2. Visual Studio Code, 可開發多種語言, 可安裝套件, 內建已支援Node.js的debugger等, 官方專文的搭配JavaScript介紹:[https://code.visualstudio.com/Docs/languages/javascript](https://code.visualstudio.com/Docs/languages/javascript) 
+
+以上兩個都可以用來開發瀏覽器以及Server端(Node.js)的程式.
+
+### Atom的一些tips
+
+* `cmd+left` 跳到當行最前面, `cmd+right` 跳到當行最右邊.
+* 用游標選取一段文字, `cmd+/` 可以把整段文字變成註解.
+* 用遊標選取一段文字, `cmd+[`以及`cmd+]` 可以把向左或向右移一個tab縮排.
+* atom可以使用 [jsformat](https://atom.io/packages/jsformat) 來自動排版(使用基本通用的規則)，若需要更進一步符合特定coding style, 可使用[`linter-eslint`](https://atom.io/packages/linter-eslint) 來套用airbnb的coding style package, 安裝方式待補充, 這些類似可能需要擇一安裝，因為通常會有save時自動修正的功能，會衝突.
+
+### Debugger方式
 
 * 印log: 
     1. `console.log("error:", json);` 
@@ -20,17 +45,6 @@ e.g. `迴圈跑個五次`
 
 * 縮排跟coding style很重要, `var x = 5`; 比`var x =5`好. coding style可參考airbnb的, [https://github.com/airbnb/javascript](https://github.com/airbnb/javascript). 縮排又可以分為使用`soft tab`(spaces,建議用這個)跟`Tab characters`.
 * naming convention命名很重要, 請參考[http://www.w3schools.com/js/js_conventions.asp](http://www.w3schools.com/js/js_conventions.asp)
-
-### Atom的一些tips
-
-* `cmd+left` 跳到當行最前面, `cmd+right` 跳到當行最右邊.
-* 用游標選取一段文字, `cmd+/` 可以把整段文字變成註解.
-* 用遊標選取一段文字, `cmd+[`以及`cmd+]` 可以把向左或向右移一個tab縮排.
-* atom可以使用 [jsformat](https://atom.io/packages/jsformat) 來自動排版(使用基本通用的規則)，若需要更進一步符合特定coding style, 可使用[`linter-eslint`](https://atom.io/packages/linter-eslint) 來套用airbnb的coding style package, 安裝方式待補充, 這些類似可能需要擇一安裝，因為通常會有save時自動修正的功能，會衝突.
-
-### Online 測試JavaScript code的方法
-1. Chrome的console(有部份自動完成), 多行輸入:`shift+enter`. ref: [https://coderwall.com/p/bv0k0q/enter-multiple-lines-in-chrome-js-console](https://coderwall.com/p/bv0k0q/enter-multiple-lines-in-chrome-js-console)
-2. 其他網站提供的, 單人方便練習html+js+css的工具, 無法多人同時edit, 但都可選es6, 且引入外部lib:  e.g. [https://jsbin.com](https://jsbin.com)<-有自動完成 or [http://codepen.io/](http://codepen.io/)
 
 ### snippet
 
