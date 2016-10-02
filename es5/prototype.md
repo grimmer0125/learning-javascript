@@ -1,6 +1,6 @@
 ## [進階] JavaScript的 Prototype
 
-**Prototype主要可以用來做/模擬傳統物件導向的繼承 inheritance
+**Prototype主要可以用來做/模擬傳統物件導向的繼承 inheritance**
 
 參考:
 
