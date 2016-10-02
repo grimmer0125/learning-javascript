@@ -127,3 +127,5 @@ $('.jQueryButton').click(function(){
 ~~~
 
 **callback有分需要用到this, 以及沒有需要用到this的case.即上述兩例, 後面的sections會詳細講解this.**
+
+

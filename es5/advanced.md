@@ -1,13 +1,3 @@
-### self invoke function (定義跟執行同時)
-
-常用來跟 module pattern搭配.
-
-~~~ javascript
-(function () {
-  var x = "Hello!!"; // I will invoke myself
-})();
-~~~
-
 ### 何謂module
 
 ES5 (ECMAScript 5) 時，JavaScript本身並沒有內建module的概念. module一般可視做Function及資料(object)的集合.
