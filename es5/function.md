@@ -6,7 +6,7 @@
 
 所謂的function/library一般有兩種.  
 
-1. 語言內建
+1. 語言內建.
 2. 自己寫的或是別人寫好的. 但因為JavaScript的執行環境(平台)比其他語言還要來得多種. 所以Browser跟Node.js都各有提供它們平台上面非語言內建的function，且有些相容，有些不相容.
 
 function裡面也可以有內部的function(nested function). 此特性在其他語言或多或少也有, 但不像JavaScript那麼直接.
