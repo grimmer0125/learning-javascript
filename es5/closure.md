@@ -1,4 +1,4 @@
-### 閉包closure (特化的function跟scope)
+## 閉包closure (特化的function跟scope)
 
 **其他語言也有closure**
 
