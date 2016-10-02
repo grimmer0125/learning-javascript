@@ -123,7 +123,7 @@ var data = {
 
 2. 如何事先檢查property有無存在 (通常會在上述第1點前檢查), 如果不檢查則  `var nameValue = data.name; //undefined`,事後用可能exception或logic不符合
 
-    1. `if(data.name){}`如果物件沒有name這個property, 不會進去. 會連它的prototype都查, 若要知道prototype, 請詳閱[ES5中的自訂物件類型-prototype](es5/prototype.md)一章,  
+    1. `if(data.name){}`如果物件沒有name這個property, 不會進去. 會連它的prototype都查, 若要知道prototype, 請詳閱[ES5中的自訂物件類型-prototype](prototype.md)一章,  
     2. `data.hasOwnProperty(name)`,[https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty). 此方法不會查prototype chain, 所以在效能上比1.好，[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain) *hasOwnProperty is the only thing in JavaScript which deals with properties and does not traverse the prototype chain.*
 
 3. `for-in`, [https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/for...in](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Statements/for...in)
