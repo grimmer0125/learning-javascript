@@ -12,11 +12,11 @@
     * [進階-再講prototype](es5/prototype.md)
     * [JavaScript重點整理](es5/difference.md)
     * [Closure](es5/closure.md)
-    * [進階-module, timer](es5/advanced.md)
+    * [多個JS檔, module, timer](es5/module.md)
+    * [進階-module pattern](es5/module-pattern.md)
     * [其他](es5/others.md)
 * [實際應用](application/README.md)
     * [Server - HTTP request & response](application/http.md)
     * [Client - 用Fetch跟Server要資料](application/fetch.md)
 * [JavaScript ES6 教學](es6/README.md)
     * [箭頭函數Arrow Function](es6/arrow_function.md)
-
