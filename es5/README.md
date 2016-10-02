@@ -13,6 +13,6 @@ JavaScript最新正式版為2015年推出的 ES6, 其中包含了諸多的新功
 
 故還是會需要從JavaScript ES5 開始學起.
 
-在開始前也可以先參考 **[JavaScript重點整理](es5/difference.md)**
+在開始前也可以先參考 **[JavaScript重點整理](difference.md)**
 
 
