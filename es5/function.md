@@ -36,8 +36,8 @@ var obj = new test(); //use as a constructer
 function的arguments, 除了明顯的宣告parameters外，可以在function內部用arguments[i]的方式得到每一個argument, e.g.
 
 ~~~ javascript
-`function test(x1,x2){
-  console.log(arguments); // arguments={1:1,2:2,3:3}`
+function test(x1,x2){
+  console.log(arguments); // arguments={1:1,2:2,3:3}
 }
 test(1,2,3);
 ~~~
@@ -53,8 +53,9 @@ test(1);
 #### anonymous function 匿名函數
 
 ~~~ javascript
-`var x = function (a, b) {return a * b}`
+var x = function (a, b) {return a * b}
 ~~~
+
 The function left is actually an **anonymous function** (a function without a name).
 
 #### JavaScript中的Function definition: expression, declaration
