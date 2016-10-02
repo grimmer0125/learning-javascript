@@ -128,4 +128,16 @@ $('.jQueryButton').click(function(){
 
 **callback有分需要用到this, 以及沒有需要用到this的case.即上述兩例, 後面的sections會詳細講解this.**
 
+### self invoke function (定義跟執行同時)
+
+常用來跟module pattern搭配.(其可參考[進階-module,timer](advanced.md)一章)
+
+~~~ javascript
+(function () {
+
+ var x = "Hello!!"; // I will invoke myself
+
+})();
+
+~~~
 
