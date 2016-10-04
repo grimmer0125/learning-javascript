@@ -15,4 +15,6 @@ JavaScript最新正式版為2015年推出的 ES6, 其中包含了諸多的新功
 
 在開始前也可以先參考 **[JavaScript重點整理](difference.md)**
 
+若有物件導向基礎的, 且想先事先知道JavaScript裡面的物件導向是怎麼一回事, 可跳到 **[進階-再講prototype](prototype.md)一章**
+
 

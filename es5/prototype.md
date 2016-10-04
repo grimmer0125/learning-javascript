@@ -6,7 +6,7 @@
 
 1. Function.prototype
 [https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype)
-2. [重要]Inheritance and the prototype chain, 使用 `Object.create`去建立一個新物件並且其prototype為傳進去的物件.
+2. [重要文章]Inheritance and the prototype chain, 使用 `Object.create`去建立一個新物件並且其prototype為傳進去的物件.
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
 
 ~~~ javascript
